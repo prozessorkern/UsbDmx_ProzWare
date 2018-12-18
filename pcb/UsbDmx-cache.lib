@@ -698,6 +698,23 @@ X +V_Output 6 1250 300 200 L 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #
+# proz_util_LightLine
+#
+DEF proz_util_LightLine L 0 40 Y Y 1 F N
+F0 "L" 58 -52 50 H V C CNN
+F1 "proz_util_LightLine" 2 102 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+A 59 -7 57 850 379 0 1 4 N 64 50 104 28
+P 2 0 1 4 0 -76 0 -44 N
+P 3 0 1 4 -110 0 -110 50 64 50 N
+P 3 0 1 4 -20 0 -46 24 -20 50 N
+P 8 0 1 4 104 28 128 0 128 -12 20 -12 20 -44 -20 -44 -20 0 -110 0 N
+P 18 0 1 4 -16 -44 -20 -48 -16 -52 -20 -56 -16 -60 -20 -64 -16 -68 -20 -72 -16 -76 14 -76 18 -72 14 -68 18 -64 14 -60 18 -56 14 -52 18 -48 14 -44 N
+ENDDRAW
+ENDDEF
+#
 # regul_L7805
 #
 DEF regul_L7805 U 0 10 Y Y 1 F N

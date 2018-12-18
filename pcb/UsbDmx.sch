@@ -173,12 +173,12 @@ $EndComp
 $Comp
 L device:Crystal Y101
 U 1 1 5BF9C616
-P 3500 1250
-F 0 "Y101" V 3454 1381 50  0000 L CNN
-F 1 "24MHz" V 3545 1381 50  0000 L CNN
-F 2 "Crystals:Crystal_HC49-U_Vertical" H 3500 1250 50  0001 C CNN
-F 3 "~" H 3500 1250 50  0001 C CNN
-	1    3500 1250
+P 3400 1250
+F 0 "Y101" V 3250 1300 50  0000 L CNN
+F 1 "24MHz" V 3550 1300 50  0000 L CNN
+F 2 "Crystals:Crystal_HC49-U_Vertical" H 3400 1250 50  0001 C CNN
+F 3 "~" H 3400 1250 50  0001 C CNN
+	1    3400 1250
 	0    1    1    0   
 $EndComp
 $Comp
@@ -204,27 +204,27 @@ F 3 "~" H 3150 1450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4550 1300 3950 1300
+	4550 1300 4000 1300
 Wire Wire Line
-	3950 1300 3950 1450
+	4000 1300 4000 1450
 Wire Wire Line
-	3950 1450 3500 1450
+	4000 1450 3750 1450
 Wire Wire Line
-	3500 1450 3500 1400
+	3400 1450 3400 1400
 Wire Wire Line
-	3300 1450 3500 1450
-Connection ~ 3500 1450
+	3300 1450 3400 1450
+Connection ~ 3400 1450
 Wire Wire Line
-	3300 1050 3500 1050
+	3300 1050 3400 1050
 Wire Wire Line
-	3950 1050 3950 1200
+	4000 1050 4000 1200
 Wire Wire Line
-	3950 1200 4550 1200
+	4000 1200 4550 1200
 Wire Wire Line
-	3500 1100 3500 1050
-Connection ~ 3500 1050
+	3400 1100 3400 1050
+Connection ~ 3400 1050
 Wire Wire Line
-	3500 1050 3950 1050
+	3400 1050 3750 1050
 Wire Wire Line
 	3000 1450 2900 1450
 Wire Wire Line
@@ -1432,37 +1432,37 @@ Text Label 8000 1700 0    50   ~ 0
 AD6
 Text Label 8000 1800 0    50   ~ 0
 AD7
-Text Label 8600 1550 0    50   ~ 0
-AD0
-Text Label 8600 1650 0    50   ~ 0
-AD1
-Text Label 8600 1750 0    50   ~ 0
-AD2
-Text Label 8600 1850 0    50   ~ 0
-AD3
-Text Label 8600 1950 0    50   ~ 0
-AD4
-Text Label 8600 2050 0    50   ~ 0
-AD5
-Text Label 8600 2150 0    50   ~ 0
-AD6
 Text Label 8600 2250 0    50   ~ 0
+AD0
+Text Label 8600 2150 0    50   ~ 0
+AD1
+Text Label 8600 2050 0    50   ~ 0
+AD2
+Text Label 8600 1950 0    50   ~ 0
+AD3
+Text Label 8600 1850 0    50   ~ 0
+AD4
+Text Label 8600 1750 0    50   ~ 0
+AD5
+Text Label 8600 1650 0    50   ~ 0
+AD6
+Text Label 8600 1550 0    50   ~ 0
 AD7
-Text Label 9950 1550 0    50   ~ 0
+Text Label 9900 2250 0    50   ~ 0
 A0
-Text Label 9950 1650 0    50   ~ 0
+Text Label 9900 2150 0    50   ~ 0
 A1
-Text Label 9950 1750 0    50   ~ 0
+Text Label 9900 2050 0    50   ~ 0
 A2
-Text Label 9950 1850 0    50   ~ 0
+Text Label 9900 1950 0    50   ~ 0
 A3
-Text Label 9950 1950 0    50   ~ 0
+Text Label 9900 1850 0    50   ~ 0
 A4
-Text Label 9950 2050 0    50   ~ 0
+Text Label 9900 1750 0    50   ~ 0
 A5
-Text Label 9950 2150 0    50   ~ 0
+Text Label 9900 1650 0    50   ~ 0
 A6
-Text Label 9950 2250 0    50   ~ 0
+Text Label 9900 1550 0    50   ~ 0
 A7
 $Comp
 L device:C C116
@@ -1788,6 +1788,43 @@ Wire Wire Line
 	1550 2500 1550 2350
 Wire Wire Line
 	1550 2350 1750 2350
+Connection ~ 1750 2350
+Wire Wire Line
+	1750 2350 1750 1800
+$Comp
+L proz_util:LightLine L?
+U 1 1 5C1BA6D0
+P 800 650
+AR Path="/5C0322AA/5C1BA6D0" Ref="L?"  Part="1" 
+AR Path="/5C1BA6D0" Ref="L101"  Part="1" 
+F 0 "L101" H 600 650 50  0000 R CNN
+F 1 "1271.1001" H 1100 750 50  0000 R CNN
+F 2 "proz_unknown:1271.1001" H 800 650 50  0001 C CNN
+F 3 "" H 800 650 50  0001 C CNN
+	1    800  650 
+	1    0    0    -1  
+$EndComp
+$Comp
+L device:R R110
+U 1 1 5C211C9C
+P 3750 1250
+F 0 "R110" H 3820 1296 50  0000 L CNN
+F 1 "1M" H 3820 1205 50  0000 L CNN
+F 2 "Resistors_SMD:R_0603_HandSoldering" V 3680 1250 50  0001 C CNN
+F 3 "~" H 3750 1250 50  0001 C CNN
+	1    3750 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 1100 3750 1050
+Connection ~ 3750 1050
+Wire Wire Line
+	3750 1050 4000 1050
+Wire Wire Line
+	3750 1400 3750 1450
+Connection ~ 3750 1450
+Wire Wire Line
+	3750 1450 3400 1450
 Wire Bus Line
 	10350 1650 10350 3350
 Wire Bus Line
@@ -1796,7 +1833,4 @@ Wire Bus Line
 	8400 1200 8400 3500
 Wire Bus Line
 	6350 1500 6350 5950
-Connection ~ 1750 2350
-Wire Wire Line
-	1750 2350 1750 1800
 $EndSCHEMATC
