@@ -62,10 +62,6 @@ F 3 "~" H 9300 1350 50  0001 C CNN
 	1    9300 1350
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	8900 1250 9150 1250
-Wire Wire Line
-	8900 1350 9150 1350
 $Comp
 L power:GNDA #PWR0216
 U 1 1 5C033D88
@@ -577,8 +573,6 @@ Wire Wire Line
 	10150 3300 10150 3350
 Wire Wire Line
 	8900 1450 9000 1450
-Wire Wire Line
-	9000 2750 9000 1550
 $Comp
 L proz_interface:SN75176 U205
 U 1 1 5C214082
@@ -627,10 +621,6 @@ F 3 "~" H 9300 4800 50  0001 C CNN
 	1    9300 4800
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	8900 4700 9150 4700
-Wire Wire Line
-	8900 4800 9150 4800
 $Comp
 L power:GNDA #PWR0232
 U 1 1 5C2140A8
@@ -1040,10 +1030,6 @@ F 3 "" H 7600 2750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7600 2750 7600 1450
-Wire Wire Line
-	8100 1450 8000 1450
-Wire Wire Line
 	8000 1450 8000 2350
 Connection ~ 8000 2350
 Wire Wire Line
@@ -1081,8 +1067,6 @@ F 3 "" H 7600 6200 50  0001 C CNN
 	1    7600 6200
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7600 6200 7600 4900
 Wire Wire Line
 	8100 4600 8000 4600
 Wire Wire Line
@@ -1355,24 +1339,6 @@ F 3 "" H 9950 1600 50  0001 C CNN
 	1    9950 1600
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9450 1350 9750 1350
-Wire Wire Line
-	9450 1250 9650 1250
-Wire Wire Line
-	9650 1000 9650 1250
-Connection ~ 9650 1250
-Wire Wire Line
-	9650 1250 9850 1250
-Wire Wire Line
-	9750 1350 9750 650 
-Wire Wire Line
-	9750 650  9650 650 
-Wire Wire Line
-	9650 650  9650 700 
-Connection ~ 9750 1350
-Wire Wire Line
-	9750 1350 9850 1350
 Connection ~ 9000 1450
 Wire Wire Line
 	9000 1450 9150 1450
@@ -1386,7 +1352,7 @@ $Comp
 L device:C C203
 U 1 1 5C091E8B
 P 9650 1550
-F 0 "C203" V 9700 1650 50  0000 C CNN
+F 0 "C203" V 9700 1700 50  0000 C CNN
 F 1 "470p 2kV" V 9700 1300 50  0000 C CNN
 F 2 "Capacitors_THT:C_Disc_D7.5mm_W5.0mm_P7.50mm" H 9688 1400 50  0001 C CNN
 F 3 "~" H 9650 1550 50  0001 C CNN
@@ -1437,7 +1403,7 @@ $Comp
 L device:C C212
 U 1 1 5C0E7579
 P 9650 5000
-F 0 "C212" V 9700 5100 50  0000 C CNN
+F 0 "C212" V 9700 5150 50  0000 C CNN
 F 1 "470p 2kV" V 9700 4750 50  0000 C CNN
 F 2 "Capacitors_THT:C_Disc_D7.5mm_W5.0mm_P7.50mm" H 9688 4850 50  0001 C CNN
 F 3 "~" H 9650 5000 50  0001 C CNN
@@ -1484,4 +1450,86 @@ F 3 "" H 10350 5200 50  0001 C CNN
 	1    10350 5200
 	-1   0    0    -1  
 $EndComp
+$Comp
+L proz_diodes:ESD_2x U206
+U 1 1 5C1DBB01
+P 8600 1700
+F 0 "U206" H 8500 1950 60  0000 C CNN
+F 1 "PESD5V0S2BT" H 8775 1619 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 8600 1700 60  0001 C CNN
+F 3 "" H 8600 1700 60  0000 C CNN
+	1    8600 1700
+	-1   0    0    1   
+$EndComp
+$Comp
+L proz_diodes:ESD_2x U207
+U 1 1 5C203AF7
+P 8600 5150
+F 0 "U207" H 8500 5400 60  0000 C CNN
+F 1 "PESD5V0S2BT" H 8775 5069 60  0000 C CNN
+F 2 "TO_SOT_Packages_SMD:SOT-23_Handsoldering" H 8600 5150 60  0001 C CNN
+F 3 "" H 8600 5150 60  0000 C CNN
+	1    8600 5150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	9000 1550 9000 2750
+Wire Wire Line
+	9650 1250 9850 1250
+Wire Wire Line
+	9450 1250 9650 1250
+Connection ~ 9650 1250
+Wire Wire Line
+	9650 1000 9650 1250
+Wire Wire Line
+	9650 650  9650 700 
+Wire Wire Line
+	9750 650  9650 650 
+Wire Wire Line
+	9750 1350 9850 1350
+Wire Wire Line
+	9450 1350 9750 1350
+Connection ~ 9750 1350
+Wire Wire Line
+	9750 1350 9750 650 
+Wire Wire Line
+	7600 1800 7600 1450
+Wire Wire Line
+	7600 2750 7600 1800
+Connection ~ 7600 1800
+Wire Wire Line
+	8050 1800 7600 1800
+Wire Wire Line
+	8900 4700 9150 4700
+Wire Wire Line
+	8900 4800 9150 4800
+Wire Wire Line
+	7600 6200 7600 5250
+Wire Wire Line
+	7600 5250 7600 4900
+Connection ~ 7600 5250
+Wire Wire Line
+	8050 5250 7600 5250
+Wire Wire Line
+	8900 1250 9150 1250
+Wire Wire Line
+	8900 1350 9150 1350
+Text Label 8800 1850 0    50   ~ 0
+TX_A
+Wire Wire Line
+	8100 1450 8000 1450
+Text Label 8800 1750 0    50   ~ 0
+TX_B
+Text Label 9750 1050 0    50   ~ 0
+TX_A
+Text Label 9650 1050 2    50   ~ 0
+TX_B
+Text Label 8800 5300 0    50   ~ 0
+RX_A
+Text Label 8800 5200 0    50   ~ 0
+RX_B
+Text Label 9700 4500 0    50   ~ 0
+RX_A
+Text Label 9600 4500 2    50   ~ 0
+RX_B
 $EndSCHEMATC

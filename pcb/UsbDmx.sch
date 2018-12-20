@@ -74,7 +74,7 @@ F 3 "~" H 1500 1800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	1350 1800 1250 1800
+	1350 1800 1300 1800
 $Comp
 L diode:SB150 D102
 U 1 1 5BF96FF6
@@ -86,8 +86,6 @@ F 3 "http://www.diodes.com/_files/datasheets/ds23022.pdf" H 2200 1800 50  0001 C
 	1    2200 1800
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	2050 1800 1750 1800
 Text Label 1750 1800 0    50   ~ 0
 5V_USB
 $Comp
@@ -1740,11 +1738,6 @@ Wire Wire Line
 	1700 2100 2950 2100
 Wire Wire Line
 	1850 2650 1750 2650
-Wire Wire Line
-	1750 2650 1750 2350
-Connection ~ 1750 1800
-Wire Wire Line
-	1750 1800 1650 1800
 $Comp
 L power:GND #PWR0140
 U 1 1 5C2FC1C6
@@ -1784,13 +1777,6 @@ F 3 "" H 1550 3000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1550 3000 1550 2800
-Wire Wire Line
-	1550 2500 1550 2350
-Wire Wire Line
-	1550 2350 1750 2350
-Connection ~ 1750 2350
-Wire Wire Line
-	1750 2350 1750 1800
 $Comp
 L proz_util:LightLine L?
 U 1 1 5C1BA6D0
@@ -1825,6 +1811,22 @@ Wire Wire Line
 Connection ~ 3750 1450
 Wire Wire Line
 	3750 1450 3400 1450
+Wire Wire Line
+	1750 2650 1750 2300
+Wire Wire Line
+	1750 2300 1550 2300
+Wire Wire Line
+	1300 2300 1300 1800
+Connection ~ 1300 1800
+Wire Wire Line
+	1300 1800 1250 1800
+Wire Wire Line
+	1650 1800 2050 1800
+Wire Wire Line
+	1550 2500 1550 2300
+Connection ~ 1550 2300
+Wire Wire Line
+	1550 2300 1300 2300
 Wire Bus Line
 	10350 1650 10350 3350
 Wire Bus Line

@@ -536,6 +536,21 @@ X ~ G -100 50 100 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
+# proz_diodes_ESD_2x
+#
+DEF proz_diodes_ESD_2x U 0 40 Y Y 1 F N
+F0 "U" 100 -50 60 H V C CNN
+F1 "proz_diodes_ESD_2x" 450 -50 60 H V C CNN
+F2 "" 0 0 60 H V C CNN
+F3 "" 0 0 60 H V C CNN
+DRAW
+S 0 0 350 200 0 1 0 N
+X K1 1 -200 150 200 R 50 50 1 1 I
+X K2 2 -200 50 200 R 50 50 1 1 I
+X GND 3 550 100 200 L 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
 # proz_interface_SN75176
 #
 DEF proz_interface_SN75176 U 0 40 Y Y 1 F N
