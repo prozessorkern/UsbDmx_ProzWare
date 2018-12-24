@@ -1,4 +1,4 @@
-update=20.12.2018 22:37:05
+update=23.12.2018 22:03:09
 version=1
 last_client=kicad
 [general]
@@ -69,7 +69,7 @@ SolderPasteRatio=-0
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/1]
 Name=Shield
-Clearance=4
+Clearance=2
 TrackWidth=0.25
 ViaDiameter=0.8
 ViaDrill=0.4
